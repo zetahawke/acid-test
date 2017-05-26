@@ -19,6 +19,7 @@
 //= require angular-animate/angular-animate.min
 //= require angular-resource/angular-resource.min
 //= require ng-notify/dist/ng-notify.min
+//= require angular-base64-upload/dist/angular-base64-upload.min
 
 
 //= require app/app
