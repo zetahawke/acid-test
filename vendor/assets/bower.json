@@ -4,6 +4,7 @@
     "animate.css": "latest",
     "angular-animate": "latest",
     "angular-resource": "latest",
-    "ng-notify": "latest"
+    "ng-notify": "latest",
+    "angular-base64-upload": "latest"
   }
 }

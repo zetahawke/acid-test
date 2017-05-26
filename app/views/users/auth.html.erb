@@ -8,9 +8,15 @@
           <label for="icon_prefix" class="active">Email</label>
         </div>
         <div class="input-field col s12 meh">
-          <i class="material-icons prefix">lock</i>
-          <input id="icon_prefix" type="text" name="passworddb" placeholder="base64" class="validate" ng-model='user.image'>
-          <label for="icon_prefix" class="active">Image encode</label>
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Image</span>
+              <input type='file' ng-model='image' base-sixty-four-input accept="image/*">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" ng-value='image.base64' type="text">
+            </div>
+          </div>
         </div>
         <div class="center-align">
           <button name="login" class="btn meh waves-effect waves-light" ng-click="authUser()">Sign in</button>

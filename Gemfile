@@ -28,6 +28,8 @@ gem "animate-rails"
 gem 'materialize-sass'
 gem 'material_icons'
 
+gem 'httparty'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-byebug'

@@ -10,14 +10,20 @@
       html: false
     });
     $scope.user = User.new();
+    $scope.image = '';
 
     $scope.authUser = function () {
-      User.auth($scope.user).then(function(data){
-        var type = data.validate ? 'success' : 'error';
-        ngNotify.set(data.message, { type: type });
-      }, function(error){
-        ngNotify.set(error.message, { type: 'error' });
-      });
+      if ($scope.image.base64.length > 10280) { 
+        ngNotify.set('La imagen es demasiado grande.', { type: 'error' }); 
+      } else {
+        $scope.user.image = $scope.image.base64;
+        User.auth($scope.user).then(function(data){
+          var type = data.validate ? 'success' : 'error';
+          ngNotify.set(data.message, { type: type });
+        }, function(error){
+          ngNotify.set(error.message, { type: 'error' });
+        });
+      }
     };
   }])
 }).call(this);
