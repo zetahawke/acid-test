@@ -1,0 +1,21 @@
+<div class="container-fluid form" ng-controller="UsersController">
+  <div class="container">
+    <div class="card  slideInUp wow animated" style="visibility: visible; animation-name: slideInUp;">
+      <div class="sign">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" name="emaillog" placeholder="user@email.com" class="validate" ng-model='user.email'>
+          <label for="icon_prefix" class="active">Email</label>
+        </div>
+        <div class="input-field col s12 meh">
+          <i class="material-icons prefix">lock</i>
+          <input id="icon_prefix" type="text" name="passworddb" placeholder="base64" class="validate" ng-model='user.image'>
+          <label for="icon_prefix" class="active">Image encode</label>
+        </div>
+        <div class="center-align">
+          <button name="login" class="btn meh waves-effect waves-light" ng-click="authUser()">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

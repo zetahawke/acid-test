@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app='acid-test'>
+  <head>
+    <title>AcidTest</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="container-fluid header center-align gradient">
+      <nav>
+        <div class="nav-wrapper nav-wrapper-2 container white">
+        <ul class="left hide-on-med-and-down">
+          <li><a href="#index" class="brand"><span class="logo"></span> Acid-Test</a></li>
+        </ul>
+
+        <ul class="center hide-on-large-only">
+          <li><a href="#index" class="brand dark-text"><span class="logo"></span></a></li>
+        </ul>
+
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#index">Home</a></li>
+            <li><a href="#categories">About</a></li>
+            <li><a href="#categories">Plans</a></li>
+            <li><a href="#categories">Contact</a></li>
+          <li><a href="sign" class="waves-effect waves-light btn">Sign In</a></li>
+        </ul>
+      </div>
+      </nav>
+
+      <div class="container">
+        <div class="container left-align pagination">
+          <h5 class="slideInUp wow animated" style="visibility: visible; animation-name: slideInUp;"><a href="#index">Home</a> <i class="fa fa-angle-right"></i> <span><a href="#index">Sign In</a></span></h5>
+        </div>
+      </div>
+    </div>
+
+
+
+    <%= yield %>
+  </body>
+</html>

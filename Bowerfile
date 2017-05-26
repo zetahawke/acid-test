@@ -1,0 +1,4 @@
+asset 'animate.css'
+asset 'angular-animate'
+asset 'angular-resource'
+asset 'ng-notify'
