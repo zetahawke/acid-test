@@ -33,7 +33,13 @@
 
       <div class="container">
         <div class="container left-align pagination">
-          <h5 class="slideInUp wow animated" style="visibility: visible; animation-name: slideInUp;"><a href="#index">Home</a> <i class="fa fa-angle-right"></i> <span><a href="#index">Sign In</a></span></h5>
+          <h5 class="slideInUp wow animated" style="visibility: visible; animation-name: slideInUp;">
+            <a href="#index">Home</a>
+            <i class="fa fa-angle-right"></i>
+            <span>
+              <a href="#index"><%= params[:action].capitalize %></a>
+            </span>
+          </h5>
         </div>
       </div>
     </div>

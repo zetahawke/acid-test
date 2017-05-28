@@ -94,7 +94,7 @@
 }
 
 .header nav .nav-wrapper .brand .logo {
-  background-image: url(../img/logo.svg);
+  background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -929,7 +929,6 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(meh.woff2) format("woff2");
 }
 
 .material-icons {
